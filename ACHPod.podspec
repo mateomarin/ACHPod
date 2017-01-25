@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 
   s.source_files  = "ACHOnFileIosSDK", "ACHOnFileIosSDK/**/*.{h,m,swift}"
 
-  s.public_header_files = "ACHOnFileIosSDK/Frameworks/**/*.h"
+  s.public_header_files = "Frameworks/**/*.h"
 
   s.framework  = "PayWithMyBank"
-  s.vendored_frameworks = "PayWithMyBank"
+  s.vendored_frameworks = "Frameworks/PayWithMyBank.framework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PROJECT_DIR)/Frameworks" }
